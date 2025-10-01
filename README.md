@@ -78,3 +78,17 @@ You are now free to customize the project as needed without any link to the orig
 ---
 
 ? Done! You have successfully detached the repository and created a new one based on PlaywrightSetup.
+
+---
+
+## Updating Playwright to the latest version
+
+Using the command line enter:
+
+`npm install @playwright/test@latest`
+
+---
+
+## Recommended Visual Studio Extensions for Playwright
+
+1. [Playwright Helpers](https://marketplace.visualstudio.com/items?itemName=jaktestowac-pl.playwright-helpers)
