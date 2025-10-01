@@ -7,11 +7,9 @@ This guide explains how to clone this repository, detach it from the original fo
 First, clone this repository to your local machine using Git.
 
 ```sh
-git clone https://github.com/YOUR-USERNAME/PlaywrightSetup.git
+git clone https://github.com/MarkTheTestStrategist/PlaywrightSetup.git
 cd PlaywrightSetup
 ```
-
-> Replace `YOUR-USERNAME` with your GitHub username.
 
 ## Step 2: Detach the Repository
 
@@ -23,10 +21,12 @@ git init
 ```
 
 This will:
+
 - Remove all Git history and association with the original repository.
 - Initialize a fresh Git repository in the same folder.
 
 > **Note:** If the `rm -rf .git` command does not work, you can manually delete the `.git` folder by:
+
 - Navigating to your project folder.
 - Enabling hidden files/folders if necessary.
 - Deleting the `.git` folder directly.
@@ -49,6 +49,7 @@ git push -u origin main
 ```
 
 Replace:
+
 - `YOUR-USERNAME` with your GitHub username.
 - `YOUR-NEW-REPO` with the name of your new repository.
 
@@ -66,6 +67,7 @@ If you prefer using GitKraken, follow these steps:
 ## Step 5: Verify Your Setup
 
 Go to your new repository on GitHub and verify that:
+
 - The code has been pushed successfully.
 - There is no reference to the original fork.
 
@@ -76,4 +78,3 @@ You are now free to customize the project as needed without any link to the orig
 ---
 
 ? Done! You have successfully detached the repository and created a new one based on PlaywrightSetup.
-
