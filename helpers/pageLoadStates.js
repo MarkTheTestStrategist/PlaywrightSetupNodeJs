@@ -1,8 +1,5 @@
-import { test, expect } from '@playwright/test';
-
-module.exports = {
-	async WaitForLoadStateToComplete(page) {
-		await page.waitForLoadState('load');
-		await page.waitForLoadState('networkidle');
-	}
+// helpers/pageLoadStates.js
+export async function WaitForLoadStateToComplete(page) {
+  await page.waitForLoadState('load');
+  await page.waitForLoadState('networkidle');
 }

@@ -1,87 +1,10 @@
-# PlaywrightSetup - Detaching and Creating a New Repo
+# Welcome to Playwright
 
-This guide explains how to clone this repository, detach it from the original fork, and create a new repository using this as your baseline.
+Within this documentation, you will hopefully find what you need or references of where to find what you need.
 
-## Step 1: Clone the Repository
+Before we get started, just run the following commands to ensure you're inital installation is tip-top.
 
-First, clone this repository to your local machine using Git.
-
-```sh
-git clone https://github.com/MarkTheTestStrategist/PlaywrightSetup.git
-cd PlaywrightSetup
-```
-
-## Step 2: Detach the Repository
-
-To detach the repository from the original fork, remove the existing Git remote and initialize a new one.
-
-```sh
-rm -rf .git
-git init
-```
-
-This will:
-
-- Remove all Git history and association with the original repository.
-- Initialize a fresh Git repository in the same folder.
-
-> **Note:** If the `rm -rf .git` command does not work, you can manually delete the `.git` folder by:
-
-- Navigating to your project folder.
-- Enabling hidden files/folders if necessary.
-- Deleting the `.git` folder directly.
-
-## Step 3: Create a New Repository on GitHub
-
-1. Go to [GitHub](https://github.com/new) and create a new repository.
-2. Name your repository as desired.
-3. Do **not** initialize it with a README, `.gitignore`, or license.
-
-## Step 4: Connect Your Local Project to the New Repository
-
-Back in your terminal, add the new remote and push your code.
-
-```sh
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-NEW-REPO.git
-git add .
-git commit -m "Initial commit based on PlaywrightSetup"
-git push -u origin main
-```
-
-Replace:
-
-- `YOUR-USERNAME` with your GitHub username.
-- `YOUR-NEW-REPO` with the name of your new repository.
-
-## Step 4 (Alternative): Detach and Create a New Repository Using GitKraken
-
-If you prefer using GitKraken, follow these steps:
-
-1. **Open GitKraken** and navigate to `File > Clone Repo`.
-2. Clone the repository using the URL: `https://github.com/YOUR-USERNAME/PlaywrightSetup.git`.
-3. Once cloned, open the repository in GitKraken.
-4. Detach it by selecting `File > Init Repo`. This will initialize a new Git repository without any connection to the original.
-5. In GitKraken, go to `File > Init Repo` again and choose the option to create a new GitHub repository.
-6. GitKraken will automatically push the code to your new repository without needing to create it manually on GitHub.
-
-## Step 5: Verify Your Setup
-
-Go to your new repository on GitHub and verify that:
-
-- The code has been pushed successfully.
-- There is no reference to the original fork.
-
-## Step 6: Start Customizing Your Project
-
-You are now free to customize the project as needed without any link to the original PlaywrightSetup repository.
-
----
-
-? Done! You have successfully detached the repository and created a new one based on PlaywrightSetup.
-
----
-
-## Updating Playwright to the latest version
+## ⤵️ Updating Playwright to the latest version
 
 Using the command line enter:
 
@@ -89,6 +12,20 @@ Using the command line enter:
 
 ---
 
-## Recommended Visual Studio Extensions for Playwright
+## 🌐 Install browsers if not present
 
-1. [Playwright Helpers](https://marketplace.visualstudio.com/items?itemName=jaktestowac-pl.playwright-helpers)
+`npx playwright install`
+
+---
+
+## Further guides
+
+I have simplified some of the guides so you don't have to. These aim to get you up and running as quickly as possible, some might even just be JaveScript/Typescript examples.
+
+### Help
+
+- [something](url)
+
+### Templates
+
+- [Config Template](../PlaywrightEcomm/documents/config-template-example.md)
