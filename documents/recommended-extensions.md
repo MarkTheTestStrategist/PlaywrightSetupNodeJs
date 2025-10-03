@@ -4,7 +4,7 @@
 
 1. [Playwright Helpers](https://marketplace.visualstudio.com/items?itemName=jaktestowac-pl.playwright-helpers)
 2. [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-   1. Also read ["Prettier Recommended Settings"]()
+   1. Also read ["Prettier Recommended Settings"](../documents/prettier-recommended-settings.md)
 
 ## Chrome Browser
 
