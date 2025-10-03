@@ -6,4 +6,4 @@
       <Channel>msedge</Channel>
     </LaunchOptions>
   </Playwright>
-</RunSettings>
+</RunSettings>;
