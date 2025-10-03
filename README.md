@@ -16,15 +16,21 @@ Using the command line enter:
 
 `npx playwright install`
 
+## 🏃🏼‍➡️ Running tests
+
+`npx playwright test`
+
 ---
 
 ## Further guides
 
-I have simplified some of the guides so you don't have to. These aim to get you up and running as quickly as possible, some might even just be JaveScript/Typescript examples.
+I have simplified some of the guides so you don't have to.
+These aim to get you up and running as quickly as possible, some might even just be JaveScript/Typescript examples.
 
 ### Help
 
-- [something](url)
+- [Playwright Setup Detaching & Creating](./documents/PlaywrightSetup-Detaching%20and%20Creating.md)
+- [Recommended Extensions](./documents/recommended-extensions.md) for Vs Code & Browsers.
 
 ### Templates
 
