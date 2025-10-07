@@ -104,3 +104,5 @@ playwright-report/
 test-results/
 
 playwright-traces/
+
+test-artifcts/
