@@ -27,11 +27,26 @@ Using the command line enter:
 I have simplified some of the guides so you don't have to.
 These aim to get you up and running as quickly as possible, some might even just be JaveScript/Typescript examples.
 
-### Help
-
 - [Playwright Setup Detaching & Creating](./documents/PlaywrightSetup-Detaching%20and%20Creating.md)
 - [Recommended Extensions](./documents/recommended-extensions.md) for Vs Code & Browsers.
+- [Playwright-Trace files.](./documents/playwright-traces.md)
 
-### Templates
+
+## Further installations
+
+### Typescript
+
+Make the path aliases work at runtime
+TypeScript’s paths help the editor, but Node needs a resolver at runtime.
+
+```batch
+npm i -D tsconfig-paths
+```
+
+## Templates
 
 - [Config Template](../PlaywrightEcomm/documents/config-template-example.md)
+
+## Best Practices
+
+- [Helpers vs Utilities](./documents/helpers-vs-utilities.md)

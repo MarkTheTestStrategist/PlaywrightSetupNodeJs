@@ -1,5 +1,6 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
+import "tsconfig-paths/register";
 
 /**
  * Read environment variables from file.
@@ -12,8 +13,9 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
+
 export default defineConfig({
-    testDir: './tests',
+    testDir: "./tests",
     /* Run tests in files in parallel */
     fullyParallel: true,
     /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -23,22 +25,22 @@ export default defineConfig({
     /* Opt out of parallel tests on CI. */
     workers: process.env.CI ? 1 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-    reporter: 'html',
+    reporter: "html",
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
-        /* Base URL to use in actions like `await page.goto('/')`. */
-        baseURL: 'https://the-internet.herokuapp.com/dynamic_content?with_content=static',
-
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-        trace: 'on-first-retry',
-        headless: true // Run tests in headed mode
+        trace: "on-first-retry",
+        headless: true, // Run tests in headed mode
     },
 
     /* Configure projects for major browsers */
     projects: [
         {
-            name: 'chromium',
-            use: { ...devices['Desktop Chrome'] },
+            name: "Preprod",
+            use: {
+                ...devices["Desktop Chrome"],
+                baseURL: "https://parkgroup--preprod.sandbox.my.site.com/",
+            },
         },
 
         //{
@@ -80,7 +82,7 @@ export default defineConfig({
     // },
 
     // Folder for test artifacts such as screenshots, videos, traces, etc.
-    outputDir: 'test-results',
+    outputDir: "test-results",
 
     //// path to the global setup files.
     //globalSetup: require.resolve('./global-setup'),
@@ -91,4 +93,3 @@ export default defineConfig({
     // Each test is given 30 seconds.
     timeout: 30000,
 });
-

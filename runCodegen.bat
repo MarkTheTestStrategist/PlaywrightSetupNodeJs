@@ -1,1 +1,1 @@
-npx playwright codegen https://the-internet.herokuapp.com/dynamic_content?with_content=static
+npx playwright codegen https://parkgroup--preprod.sandbox.my.site.com/products/love2shop-gift-cards

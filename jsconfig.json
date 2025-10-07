@@ -1,8 +1,0 @@
-{
-    "compilerOptions": {
-        "checkJs": true, // Enables type checking for JavaScript
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true
-    },
-    "include": [ "**/*.js" ]
-}
